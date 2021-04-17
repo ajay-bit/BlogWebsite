@@ -140,7 +140,7 @@ die("no connection". mysqli_connect_error());
                                             <div class="card-body">
                                                 <nav class="nav d-md-block d-inline-block">
                                                     <?php
-                                                    $query = "SELECT * FROM `image` WHERE `image`.`user_id`='$id'";
+                                                    $query = "SELECT * FROM `image` WHERE `image`.`user_id`=''";
                                                     $result = mysqli_query($con, $query);
                                                     while($row = mysqli_fetch_array($result))
                                                     {

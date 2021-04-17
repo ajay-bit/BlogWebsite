@@ -40,7 +40,7 @@ header('Location:index.php');
 }
 
 
-$query="INSERT INTO `register` (`bookingUser_id`, `name`, `email_id`, `mobile`, `gender`, `password`) VALUES ('', '$name', '$email', '$mobile', '$gender', '$password')";
+$query="INSERT INTO `register` (`bookingUser_id`, `name`, `email_id`, `mobile`, `gender`, `password`) VALUES ('', '$name', '$email', $mobile, '$gender', '$password')";
 
 $res = mysqli_query($con , $query);
 
